@@ -1,119 +1,109 @@
-Certainly! I've made the buttons darker, increased the vertical space, and added a square picture as a logo. Please replace `'path/to/logo.png'` with the actual path or URL of your logo image.
-
-```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI & Crypto Project</title>
+    <title>AiGuardians</title>
     <style>
         body {
-            background-color: #1f1f1f; /* Dark grey background */
-            color: #fff;
+            background-color: #161721;
+            color: #90a4ae;
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
 
-        .container {
+        #container {
             max-width: 80%;
-            margin: 0 auto;
-            padding: 20px;
+            text-align: center;
         }
 
         header {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        h1 {
-            color: #4db2ff; /* Light blue */
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 1.6;
+            background-color: #22242f;
+            padding: 20px;
+            border-radius: 10px;
             margin-bottom: 30px;
         }
 
-        .logo {
-            max-width: 100px; /* Adjust the size of the logo */
+        h1 {
+            color: #60fbd0;
+            margin-bottom: 10px;
+        }
+
+        p {
             margin-bottom: 20px;
         }
 
         footer {
-            margin-top: 50px;
-            text-align: center;
+            background-color: #22242f;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
         }
 
-        .social-buttons a {
+        .social-btn {
             display: inline-block;
-            margin: 10px;
-            color: #fff;
-            text-decoration: none;
-            padding: 15px 25px; /* Increased padding for more vertical space */
-            border-radius: 8px;
-            transition: background-color 0.3s ease;
-            background-color: #007acc; /* Darker blue */
+            margin: 0 10px;
         }
 
-        .social-buttons a:hover {
-            background-color: #004466; /* Darker blue on hover */
-        }
-
-        /* Dark mode toggle (optional) */
-        .dark-mode-toggle {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            cursor: pointer;
-        }
-
-        /* Customize dark mode icon as needed */
-        .dark-mode-icon {
+        .social-btn img {
             width: 30px;
             height: 30px;
-            fill: #fff;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-btn img:hover {
+            transform: scale(1.2);
         }
     </style>
 </head>
-
 <body>
-    <div class="container">
+
+    <div id="container">
+
         <header>
-            <img src="path/to/logo.png" alt="Logo" class="logo">
-            <h1>Empowering Decentralized AI on the Blockchain</h1>
-            <p>Your gateway to open-source artificial intelligence and blockchain validation.</p>
+            <h1>AiGuardians</h1>
+            <p>Empowering decentralized and open-source artificial intelligence on the blockchain</p>
         </header>
 
+        <section>
+            <p>We are validators and miners on the blockchain. Join us in shaping the future of AI and crypto!</p>
+        </section>
+
         <footer>
-            <div class="social-buttons">
-                <a href="https://twitter.com/" target="_blank">Twitter</a>
-                <a href="https://medium.com/" target="_blank">Medium</a>
-                <a href="https://t.me/" target="_blank">Telegram</a>
-                <a href="https://discord.com/" target="_blank">Discord</a>
-                <a href="https://github.com/" target="_blank">GitHub</a>
+            <div class="social-btn">
+                <a href="https://twitter.com/AiGuardians" target="_blank">
+                    <img src="https://placekitten.com/200/200" alt="Twitter">
+                </a>
+            </div>
+            <div class="social-btn">
+                <a href="https://medium.com/AiGuardians" target="_blank">
+                    <img src="https://placekitten.com/201/201" alt="Medium">
+                </a>
+            </div>
+            <div class="social-btn">
+                <a href="https://t.me/AiGuardians" target="_blank">
+                    <img src="https://placekitten.com/202/202" alt="Telegram">
+                </a>
+            </div>
+            <div class="social-btn">
+                <a href="https://discord.gg/AiGuardians" target="_blank">
+                    <img src="https://placekitten.com/203/203" alt="Discord">
+                </a>
+            </div>
+            <div class="social-btn">
+                <a href="https://github.com/AiGuardians" target="_blank">
+                    <img src="https://placekitten.com/204/204" alt="GitHub">
+                </a>
             </div>
         </footer>
+
     </div>
 
-    <!-- Dark mode toggle script (optional) -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const darkModeToggle = document.querySelector('.dark-mode-toggle');
-            const body = document.body;
-
-            darkModeToggle.addEventListener('click', function () {
-                body.classList.toggle('dark-mode');
-            });
-        });
-    </script>
 </body>
-
 </html>
-```
-
-This version includes a logo, darker buttons, and increased vertical spacing. Adjust the logo size and other styles as needed for your specific requirements.
