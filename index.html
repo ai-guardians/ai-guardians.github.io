@@ -1,3 +1,6 @@
+Certainly! I've made the buttons darker, increased the vertical space, and added a square picture as a logo. Please replace `'path/to/logo.png'` with the actual path or URL of your logo image.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,6 +39,11 @@
             margin-bottom: 30px;
         }
 
+        .logo {
+            max-width: 100px; /* Adjust the size of the logo */
+            margin-bottom: 20px;
+        }
+
         footer {
             margin-top: 50px;
             text-align: center;
@@ -43,17 +51,17 @@
 
         .social-buttons a {
             display: inline-block;
-            margin: 0 10px;
+            margin: 10px;
             color: #fff;
             text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 15px 25px; /* Increased padding for more vertical space */
+            border-radius: 8px;
             transition: background-color 0.3s ease;
-            background-color: #61dafb; /* Button color (similar to React) */
+            background-color: #007acc; /* Darker blue */
         }
 
         .social-buttons a:hover {
-            background-color: #4e8cd1; /* Darker blue on hover */
+            background-color: #004466; /* Darker blue on hover */
         }
 
         /* Dark mode toggle (optional) */
@@ -76,6 +84,7 @@
 <body>
     <div class="container">
         <header>
+            <img src="path/to/logo.png" alt="Logo" class="logo">
             <h1>Empowering Decentralized AI on the Blockchain</h1>
             <p>Your gateway to open-source artificial intelligence and blockchain validation.</p>
         </header>
@@ -105,3 +114,6 @@
 </body>
 
 </html>
+```
+
+This version includes a logo, darker buttons, and increased vertical spacing. Adjust the logo size and other styles as needed for your specific requirements.
