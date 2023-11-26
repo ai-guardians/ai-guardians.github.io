@@ -55,17 +55,18 @@
         .social-btn {
             display: inline-block;
             margin: 0 10px;
+            background-color: #1c6599;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
         }
 
-        .social-btn img {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .social-btn img:hover {
-            transform: scale(1.2);
+        .social-btn:hover {
+            background-color: #1e92e6;
         }
     </style>
 </head>
@@ -86,31 +87,11 @@
         </section>
 
         <footer>
-            <div class="social-btn">
-                <a href="https://twitter.com/AiGuardians" target="_blank">
-                    <img src="https://image-url-for-twitter-logo.png" alt="Twitter">
-                </a>
-            </div>
-            <div class="social-btn">
-                <a href="https://medium.com/AiGuardians" target="_blank">
-                    <img src="https://image-url-for-medium-logo.png" alt="Medium">
-                </a>
-            </div>
-            <div class="social-btn">
-                <a href="https://t.me/AiGuardians" target="_blank">
-                    <img src="https://image-url-for-telegram-logo.png" alt="Telegram">
-                </a>
-            </div>
-            <div class="social-btn">
-                <a href="https://discord.gg/AiGuardians" target="_blank">
-                    <img src="https://image-url-for-discord-logo.png" alt="Discord">
-                </a>
-            </div>
-            <div class="social-btn">
-                <a href="https://github.com/AiGuardians" target="_blank">
-                    <img src="https://image-url-for-github-logo.png" alt="GitHub">
-                </a>
-            </div>
+            <a href="https://twitter.com/AiGuardians" class="social-btn" target="_blank">Twitter</a>
+            <a href="https://medium.com/AiGuardians" class="social-btn" target="_blank">Medium</a>
+            <a href="https://t.me/AiGuardians" class="social-btn" target="_blank">Telegram</a>
+            <a href="https://discord.gg/AiGuardians" class="social-btn" target="_blank">Discord</a>
+            <a href="https://github.com/AiGuardians" class="social-btn" target="_blank">GitHub</a>
         </footer>
 
     </div>
