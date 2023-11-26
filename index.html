@@ -1,57 +1,113 @@
+Certainly! Here is the HTML code:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI & Crypto Project</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Paste the CSS code here */
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #00bcd4;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .social-buttons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-buttons a:hover {
+            background-color: #00bcd4;
+        }
+
+        /* Dark mode toggle (optional) */
+        .dark-mode-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        /* Customize dark mode icon as needed */
+        .dark-mode-icon {
+            width: 30px;
+            height: 30px;
+            fill: #fff;
+        }
+    </style>
 </head>
+
 <body>
-
     <div class="container">
-
         <header>
-            <h1>Project Name</h1>
-            <p>Your project tagline goes here</p>
+            <h1>Empowering Decentralized AI on the Blockchain</h1>
+            <p>Your gateway to open-source artificial intelligence and blockchain validation.</p>
         </header>
 
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
-        <section id="about">
-            <h2>About Us</h2>
-            <p>This is a brief description of your AI and Crypto project. Highlight key features and goals.</p>
-        </section>
-
-        <section id="features">
-            <h2>Key Features</h2>
-            <ul>
-                <li>Feature 1</li>
-                <li>Feature 2</li>
-                <li>Feature 3</li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Connect with us on social media:</p>
-            <div class="social-links">
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-                <a href="https://medium.com" target="_blank" rel="noopener noreferrer">Medium</a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-        </section>
-
         <footer>
-            <p>&copy; 2023 Your Project Name. All rights reserved.</p>
+            <div class="social-buttons">
+                <a href="https://twitter.com/" target="_blank">Twitter</a>
+                <a href="https://medium.com/" target="_blank">Medium</a>
+                <a href="https://t.me/" target="_blank">Telegram</a>
+                <a href="https://discord.com/" target="_blank">Discord</a>
+                <a href="https://github.com/" target="_blank">GitHub</a>
+            </div>
         </footer>
-
     </div>
 
+    <!-- Dark mode toggle script (optional) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const darkModeToggle = document.querySelector('.dark-mode-toggle');
+            const body = document.body;
+
+            darkModeToggle.addEventListener('click', function () {
+                body.classList.toggle('dark-mode');
+            });
+        });
+    </script>
 </body>
+
 </html>
+```
+
+Copy and paste the above HTML code into a new HTML file.
