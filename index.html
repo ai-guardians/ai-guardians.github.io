@@ -37,6 +37,24 @@
       text-align: center; /* Center paragraphs and buttons */
     }
 
+    @media (max-width: 768px) {
+      #container {
+        padding: 30px 20px; /* Add padding of 20px on both sides */
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      .cta {
+        margin: 5px;
+      }
+
+      .social-btn {
+        margin: 2px 5px;
+      }
+    }
+
     header {
       display: flex;
       justify-content: center;
@@ -48,16 +66,6 @@
       font-size: 2em;
       margin: 0;
       color: #1c6599;
-    }
-
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 1.5em;
-      }
-    }
-
-    .logo {
-      margin-right: 20px;
     }
 
     p {
@@ -76,12 +84,6 @@
       text-align: center;
       cursor: pointer;
       transition: background-color 0.3s ease-in-out;
-    }
-
-    @media (max-width: 768px) {
-      .cta {
-        margin: 5px;
-      }
     }
 
     .cta:hover {
@@ -106,12 +108,6 @@
       transition: background-color 0.3s ease-in-out;
     }
 
-    @media (max-width: 768px) {
-      .social-btn {
-        margin: 2px 5px;
-      }
-    }
-
     .social-btn:hover {
       background-color: #272936;
     }
@@ -122,18 +118,4 @@
   <div id="container">
 
     <header>
-      <img src="https://ai-guardians.github.io/AiGuardians-Tao-Logo.png" alt="AiGuardians Logo" class="logo">
-      <h1>AiGuardians</h1>
-    </header>
-
-    <p>Empowering decentralized and open-source artificial intelligence on the blockchain.</p>
-
-    <a href="https://twitter.com/AiGuardians" class="cta">Twitter</a>
-    <a href="https://medium.com/@aiguardians" class="cta">Medium</a>
-
-    <footer>
-    </footer>
-  </div>
-
-</body>
-</html>
+      <img src="
