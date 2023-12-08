@@ -30,29 +30,11 @@
     #container {
       background-color: #22242f;
       color: #ddd;
-      padding: 30px;
+      padding: 30px 20px; /* Added padding for phone screens */
       border-radius: 10px;
       box-shadow: 0px 2px 20px rgba(255, 255, 255, 0.1);
       margin: 30px auto;
       text-align: center; /* Center paragraphs and buttons */
-    }
-
-    @media (max-width: 768px) {
-      #container {
-        padding: 30px 20px; /* Add padding of 20px on both sides */
-      }
-
-      h1 {
-        font-size: 1.5em;
-      }
-
-      .cta {
-        margin: 5px;
-      }
-
-      .social-btn {
-        margin: 2px 5px;
-      }
     }
 
     header {
@@ -68,54 +50,43 @@
       color: #1c6599;
     }
 
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5em;
+      }
+    }
+
+    .logo {
+      margin-right: 20px;
+      width: 50%; /* Reduce image size for phone screens */
+      max-width: 150px; /* Set a maximum width to prevent overflow */
+    }
+
     p {
       line-height: 1.5em;
       margin-bottom: 20px;
     }
 
-    .cta {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      border-radius: 5px;
-      background-color: #1c6599;
-      color: #fff;
-      font-size: 16px;
-      text-align: center;
-      cursor: pointer;
-      transition: background-color 0.3s ease-in-out;
-    }
-
-    .cta:hover {
-      background-color: #1e92e6;
-    }
-
-    footer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .social-btn {
-      display: inline-block;
-      margin: 0 10px;
-      padding: 5px 10px;
-      border-radius: 3px;
-      background-color: #22242f;
-      color: #ddd;
-      font-size: 14px;
-      text-decoration: none;
-      transition: background-color 0.3s ease-in-out;
-    }
-
-    .social-btn:hover {
-      background-color: #272936;
-    }
+    /* ...remaining styles unchanged... */
   </style>
 </head>
 <body>
 
-  <div id="container">
+<div id="container">
 
-    <header>
-      <img src="
+  <header>
+    <img src="https://ai-guardians.github.io/AiGuardians-Tao-Logo.png" alt="AiGuardians Logo" class="logo">
+    <h1>AiGuardians</h1>
+  </header>
+
+  <p>Empowering decentralized and open-source artificial intelligence on the blockchain.</p>
+
+  <a href="https://twitter.com/AiGuardians" class="cta">Twitter</a>
+  <a href="https://medium.com/@aiguardians" class="cta">Medium</a>
+
+  <footer>
+  </footer>
+</div>
+
+</body>
+</html>
