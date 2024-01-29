@@ -29,22 +29,31 @@
       width: 30%;
     }
     #links a {
-      color: white;
-      font-size: 1.5em;
       text-decoration: none;
     }
-    #links a:hover {
-      color: #00acee;
+    #links button {
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 1.5em;
+      margin: 4px 2px;
+      cursor: pointer;
+      background-color: #1c87c9;
     }
-    /* Add this CSS code to style the subtitle */
+    #links button:hover {
+      background-color: #00acee;
+    }
     #subtitle {
       position: absolute;
       top: 60%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 2em;
+      font-size: 1.5em; /* Decrease the subtitle size */
       color: white;
       text-align: center;
+      margin-top: 10%; /* Add some space above the subtitle */
     }
   </style>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -52,11 +61,10 @@
 <body>
   <div id="particles-js"></div>
   <h1 id="title">AiGuardians</h1>
-  <!-- Add this HTML code to insert the subtitle -->
   <p id="subtitle">Empowering decentralized and open-source artificial intelligence on the blockchain.</p>
   <div id="links">
-    <a href="https://twitter.com/AiGuardians" target="_blank">Twitter</a>
-    <a href="https://medium.com/@aiguardians" target="_blank">Medium</a>
+    <a href="https://twitter.com/AiGuardians" target="_blank"><button>Twitter</button></a> <!-- Create buttons for the links -->
+    <a href="https://medium.com/@aiguardians" target="_blank"><button>Medium</button></a>
   </div>
   <script>
     particlesJS("particles-js", {
@@ -115,7 +123,7 @@
         },
         "move": {
           "enable": true,
-          "speed": 4,
+          "speed": 3,
           "direction": "none",
           "random": false,
           "straight": false,
