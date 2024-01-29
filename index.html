@@ -18,7 +18,6 @@
       font-size: 5em;
       color: white;
     }
-    /* Add this CSS code to style the links */
     #links {
       position: absolute;
       bottom: 10%;
@@ -37,13 +36,24 @@
     #links a:hover {
       color: #00acee;
     }
+    /* Add this CSS code to style the subtitle */
+    #subtitle {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2em;
+      color: white;
+      text-align: center;
+    }
   </style>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
   <div id="particles-js"></div>
   <h1 id="title">AiGuardians</h1>
-  <!-- Add this HTML code to insert the links -->
+  <!-- Add this HTML code to insert the subtitle -->
+  <p id="subtitle">Empowering decentralized and open-source artificial intelligence on the blockchain.</p>
   <div id="links">
     <a href="https://twitter.com/AiGuardians" target="_blank">Twitter</a>
     <a href="https://medium.com/@aiguardians" target="_blank">Medium</a>
@@ -105,7 +115,7 @@
         },
         "move": {
           "enable": true,
-          "speed": 3,
+          "speed": 4,
           "direction": "none",
           "random": false,
           "straight": false,
